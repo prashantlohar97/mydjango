@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>My Name Is Prashant</h1>
+<br>
+
+{% for p in pr %}
+	<h1>{{ p.title }}</h1>
+	<p>
+	<h2>{{ p.text }}</h2>
+	<p>
+	<h3>{{ p.created_date }}</h3>
+{% endfor %}
+{% endblock %}
